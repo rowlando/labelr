@@ -1,0 +1,43 @@
+{
+  "name": "labelr",
+  "version": "1.0.0",
+  "description": "A really cool way to manage labels on GitHub issues.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "NODE_ENV=production webpack",
+    "deploy": "surge -p public/ -d rowlando.surge.sh",
+    "yolo": "npm run build && npm run deploy"
+  },
+  "author": "Nick Rowlands",
+  "license": "ISC",
+  "dependencies": {
+    "ampersand-app": "^1.0.4",
+    "ampersand-model": "^6.0.2",
+    "ampersand-react-mixin": "^1.0.1",
+    "ampersand-router": "^3.0.2",
+    "babel-core": "^6.3.17",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-register": "^6.3.13",
+    "css-loader": "^0.23.0",
+    "file-loader": "^0.8.5",
+    "hjs-webpack": "^5.2.0",
+    "local-links": "^1.4.0",
+    "octicons": "^3.3.0",
+    "postcss-loader": "^0.8.0",
+    "qs": "^6.0.1",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.0",
+    "stylus-loader": "^1.4.2",
+    "surge": "^0.17.3",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0",
+    "xhr": "^2.2.0",
+    "yeticss": "^7.0.5"
+  }
+}
